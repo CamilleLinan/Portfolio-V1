@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'fonts';
 
 .header {
     position: fixed;
@@ -6,6 +7,7 @@
     width: 100%;
     background-color: $bg-header;
     margin: 0 -8px;
+    box-shadow: 0 0 5px #0000002e;
     
     &_box {
         display: flex;
@@ -20,6 +22,7 @@
         margin-left: 20px;
         
         &_title {
+            font-family: 'Raleway-Medium';
             font-size: 25px;
             margin-bottom: 0;
             margin-top: 8px;
@@ -34,6 +37,7 @@
 
     &_links {
         margin-right: 20px;
+        font-size: 19px;
 
         &_link_home {
             margin-right: 10px;
@@ -46,5 +50,5 @@
 }
 
 .active_link {
-    color: rgb(45, 118, 138);
+    color: $link-color;
 }
