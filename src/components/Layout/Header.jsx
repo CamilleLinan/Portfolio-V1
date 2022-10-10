@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -11,10 +11,20 @@ const Header = () => {
                 <div className="header_links">
                     <NavLink
                         className={({ isActive }) => (isActive ? 'header_links_link_home active_link' : 'header_links_link_home inactive_link')}
-                        end to='/'>Accueil</NavLink>
-                    <NavLink
-                        className={({ isActive }) => (isActive ? 'header_links_link_contact active_link' : 'header_links_link_contact inactive_link')}
-                        end to='/contact'>Contact</NavLink>
+                        end to='/'
+                    >
+                        Accueil
+                    </NavLink>
+                    <Link
+                        className="header_links_link_contact" 
+                        to='#'
+                        onClick={(e) => {
+                            window.location.href = 'mailto:camille.linan@hotmail.com';
+                            e.preventDefault();
+                        }}
+                    >
+                        Contact
+                    </Link>
                 </div>
             </div>
         </header>

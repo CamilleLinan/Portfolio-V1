@@ -1,5 +1,5 @@
 import Header from "../components/Layout/Header";
-import Intro from "../components/Layout/Intro";
+import Intro from "../components/Home/Intro";
 
 const Home = () => {
     return (
