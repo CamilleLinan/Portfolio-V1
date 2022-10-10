@@ -1,0 +1,17 @@
+@import 'variables';
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('fonts/Raleway-Light.ttf');
+}
+
+html {
+    background: $bg-color;
+    font-family: 'Raleway';
+    font-size: 16px;
+}
