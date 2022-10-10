@@ -11,6 +11,7 @@
     border-radius: 0.5rem;
     box-shadow: 0 0 5px #0000002e;
     max-width: 900px;
+    backdrop-filter: blur(10px);
     
     &_img {
         width: 11rem;
