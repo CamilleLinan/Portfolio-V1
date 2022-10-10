@@ -1,0 +1,50 @@
+@import 'variables';
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $bg-header;
+    margin: 0 -8px;
+    
+    &_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        max-width: 1024px;
+    }
+
+    &_titles {
+        margin-left: 20px;
+        
+        &_title {
+            font-size: 25px;
+            margin-bottom: 0;
+            margin-top: 8px;
+        }
+
+        &_subtitle {
+            font-size: 16px;
+            margin-top: 0;
+            opacity: 0.7;
+        }
+    }
+
+    &_links {
+        margin-right: 20px;
+
+        &_link_home {
+            margin-right: 10px;
+        }
+
+        &_link_contact {
+            margin-left: 10px;
+        }
+    }
+}
+
+.active_link {
+    color: rgb(45, 118, 138);
+}
