@@ -1,13 +1,13 @@
 @import 'variables';
 @import 'fonts';
 
-@media(max-width: 758px) {
+@media(max-width: 750px) {
     .projects_project {
         width: 95% !important;
     }
 }
 
-@media(max-width: 1090px) {
+@media(min-width: 750px) and (max-width: 1090px) {
     .projects_project {
         width: 49% !important;
     }
