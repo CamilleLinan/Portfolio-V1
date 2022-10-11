@@ -2,6 +2,7 @@
 @import 'fonts';
 @import 'Header';
 @import 'Intro';
+@import 'DisplayCards';
 
 html {
     background: url('img/portfolio-bg.jpg') fixed no-repeat;
@@ -20,4 +21,13 @@ a {
     &:hover {
         color: $link-color;
     }
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
 }
