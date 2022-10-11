@@ -2,7 +2,7 @@ import { projectList } from "../../datas/projectList"
 
 const DisplayCards = () => {
     return (
-        <div className="projects">
+        <section className="projects">
             <ul className="projects_list">
                 {projectList.map(({ id, cover, name }) => (
                     <li key={id} className="projects_project">
@@ -13,7 +13,7 @@ const DisplayCards = () => {
                     </li>
                 ))} 
             </ul>
-        </div>
+        </section>
     )
 }
 
