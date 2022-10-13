@@ -4,6 +4,15 @@
 @media(max-width: 800px) {
     .projects_project {
         width: 95% !important;
+        &_figcaption {
+            &_title {
+                font-size: 5vh !important;
+            }
+
+            &_subtitle {
+                font-size: 3vh !important;
+            }
+        }
     }
 }
 
@@ -66,7 +75,7 @@
 
             &_title {
                 font-family: 'Raleway-Medium';
-                font-size: 7vh;
+                font-size: 4vh;
                 margin-bottom: 5px;
                 color: white;
             }
@@ -74,8 +83,8 @@
             &_subtitle {
                 text-align: center;
                 padding: 0 1rem;
-                font-size: 3.5vh;
-                margin-top: 5px;
+                font-size: 2.5vh;
+                margin-top: 4px;
                 color: rgb(226, 226, 226);
             }
         }

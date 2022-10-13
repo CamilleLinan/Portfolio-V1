@@ -1,6 +1,22 @@
 @import 'variables';
 @import 'fonts';
 
+@media(max-width: 800px) {
+    .header {
+        position: absolute !important;
+        &_box {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &_links {
+            margin: 0 !important;
+            margin-bottom: 1rem !important;
+            font-size: 22px;
+        }
+    }
+}
+
 .header {
     position: fixed;
     top: 0;
@@ -41,12 +57,19 @@
         margin-right: 20px;
         font-size: 19px;
 
-        &_link_home {
-            margin-right: 10px;
-        }
+        &_link {
+            
+            &_home {
+                margin-right: 10px;
+            }
 
-        &_link_contact {
-            margin-left: 10px;
+            &_CV {
+                margin: 0 15px !important;
+            }
+
+            &_contact {
+                margin-left: 10px;
+            }
         }
     }
 }

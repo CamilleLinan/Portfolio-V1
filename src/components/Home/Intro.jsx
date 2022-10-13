@@ -7,7 +7,7 @@ const Intro = () => {
             <article className='intro_titles'>
                 <h3 className="intro_titles_title">Bienvenue sur mon portfolio !</h3>
                 <p className="intro_titles_subtitle">
-                    Après avoir travaillé 7 ans dans le secteur du prêt-à-porter, 
+                    Après avoir travaillé 7 ans dans le secteur de la vente, 
                     j'ai choisi de me reconvertir dans un domaine qui me passionne :
                     le développement web, et plus particulièrement l'UX design.
                 </p>

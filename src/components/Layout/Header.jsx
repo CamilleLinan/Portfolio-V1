@@ -1,4 +1,5 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import CV from '../../documents/CV_Camille_Linan_2022.pdf';
 
 const Header = () => {
     return (
@@ -10,21 +11,17 @@ const Header = () => {
                 </div>
                 <div className="header_links">
                     <NavLink
-                        className={({ isActive }) => (isActive ? 'header_links_link_home active_link' : 'header_links_link_home inactive_link')}
+                        className={({ isActive }) => (isActive && 'header_links_link_home active_link')}
                         end to='/'
                     >
                         Accueil
                     </NavLink>
-                    <Link
-                        className="header_links_link_contact" 
-                        to='#'
-                        onClick={(e) => {
-                            window.location.href = 'mailto:camille.linan@hotmail.com';
-                            e.preventDefault();
-                        }}
-                    >
+                    <a href={CV} target='_blank' rel='noreferrer' className="header_links_link_CV">
+                        CV
+                    </a>
+                    <a href='mailto:camille.linan@hotmail.com' className="header_links_link_contact">
                         Contact
-                    </Link>
+                    </a>
                 </div>
             </div>
         </header>
