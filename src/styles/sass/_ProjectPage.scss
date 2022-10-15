@@ -6,4 +6,30 @@
     padding: 1rem;
     background-color: $bg-color;
     border-radius: 0.5rem;
+    & h1 {
+        margin-top: 10px;
+    }
+    &_pres {
+        width: 45%;
+        &_article {
+            border-top: 1px solid #0000002e;
+            border-bottom: 1px solid #0000002e;
+        }
+    }
+    &_cover {
+        margin-top: 70px !important;
+        
+        &_imgs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        &_img {
+            width: 31%;
+            object-fit: cover;
+            box-shadow: 0 0 5px #00000033;
+            border-radius: 0.5rem;
+        }
+    }
 }

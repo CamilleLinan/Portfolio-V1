@@ -1,4 +1,7 @@
-import booki from './cover/1booki-cover.png'
+import booki from './cover/Booki/1booki-cover.png'
+import bookiDesk from './cover/Booki/bookiDesk.png'
+import bookiTab from './cover/Booki/bookiTab.png'
+import bookiMobile from './cover/Booki/bookiMobile.png'
 import ohmyfood from './cover/2ohmyfood-cover.png'
 import lapanthere from './cover/3lapanthere-cover.png'
 import kanap from './cover/5kanap-cover.png'
@@ -16,8 +19,11 @@ export const projectsList = [
         objectifs: 'Créer un prototype de site en intégrant la maquette conçue par le designer UI, en HTML et CSS. Le site doit bien sûr être responsive.',
         languages: 'HTML5 et CSS3',
         titleImg: 'Versions desktop, tablette et mobile :',
+        imgDesk: bookiDesk,
+        imgTab: bookiTab,
+        imgMobile: bookiMobile,
         gitLink: 'https://github.com/CamilleLinan/Projet-2-Booki',
-        webSite: 'https://camillelinan.github.io/Projet-2-Booki/'
+        webSite: 'https://camillelinan.github.io/Projet-2-Booki/',
     },
     {
         id: '02',

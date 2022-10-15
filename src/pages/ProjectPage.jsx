@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom';
 import Header from '../components/Layout/Header';
 import { projectsList } from '../datas/projectsList';
+import Footer from '../components/Layout/Footer';
 
 const ProjectPage = () => {
     const { id } = useParams()
@@ -17,7 +18,7 @@ const ProjectPage = () => {
                         </header>
                         
                         <section className='project_page_pres'>
-                            <article>
+                            <article className='project_page_pres_article'>
                                 <h2 className='project_page_pres_title'>Contexte :</h2>
                                 <p className='project_page_pres_text'>{project.context}</p>
                             </article>
@@ -25,15 +26,25 @@ const ProjectPage = () => {
                                 <h2 className='project_page_pres_title'>Objectifs :</h2>
                                 <p className='project_page_pres_text'>{project.objectifs}</p>
                             </article>
-                            <article>
+                            <article className='project_page_pres_article'>
                                 <h2 className='project_page_pres_title'>Langages utilisés :</h2>
                                 <p className='project_page_pres_text'>{project.languages}</p>
                             </article>
                         </section>
                         
                         <section className='project_page_cover'>
-                            <h3 className='project_page_cover_title'>Version desktop, tablette et mobile :</h3>
-                            <img src={project.cover} alt={project.alt} className='project_page_cover_img' />
+                            <h3 className='project_page_cover_title bold'>Version desktop, tablette et mobile :</h3>
+                            <article className='project_page_cover_imgs'>
+                                {project.imgDesk &&
+                                    <img src={project.imgDesk} alt={project.alt} className='project_page_cover_img project_page_cover_img_1' />
+                                }
+                                {project.imgTab &&
+                                    <img src={project.imgTab} alt={project.alt} className='project_page_cover_img project_page_cover_img_2' />
+                                }
+                                {project.imgMobile &&
+                                    <img src={project.imgMobile} alt={project.alt} className='project_page_cover_img project_page_cover_img_3' />
+                                }
+                            </article>
                         </section>
                         
                             <footer className='project_page_footer'>
@@ -54,6 +65,7 @@ const ProjectPage = () => {
                     </div>
                 } </div>
             ))}
+            <Footer />
         </>
     )
 }
