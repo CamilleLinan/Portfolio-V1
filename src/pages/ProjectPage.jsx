@@ -36,13 +36,23 @@ const ProjectPage = () => {
                             <h3 className='project_page_cover_title bold'>Version desktop, tablette et mobile :</h3>
                             <article className='project_page_cover_imgs'>
                                 {project.imgDesk &&
-                                    <img src={project.imgDesk} alt={project.alt} className='project_page_cover_img project_page_cover_img_1' />
+                                    <img src={project.imgDesk} alt={project.alt} className='project_page_cover_img' />
                                 }
                                 {project.imgTab &&
-                                    <img src={project.imgTab} alt={project.alt} className='project_page_cover_img project_page_cover_img_2' />
+                                    <img src={project.imgTab} alt={project.alt} className='project_page_cover_img' />
                                 }
                                 {project.imgMobile &&
-                                    <img src={project.imgMobile} alt={project.alt} className='project_page_cover_img project_page_cover_img_3' />
+                                    <img src={project.imgMobile} alt={project.alt} className='project_page_cover_img' />
+                                }
+                            </article>
+                            
+                            <h3 className='project_page_cover_title bold'>Identité graphique :</h3>
+                            <article className='project_page_ui'>
+                                {project.imgColors &&
+                                    <img src={project.imgColors} alt={project.alt} className='project_page_ui_img project_page_ui_img_colors' />
+                                }
+                                {project.imgIcons &&
+                                    <img src={project.imgIcons} alt={project.alt} className='project_page_ui_img project_page_ui_img_icons' />
                                 }
                             </article>
                         </section>

@@ -2,7 +2,14 @@ import booki from './cover/Booki/1booki-cover.png'
 import bookiDesk from './cover/Booki/bookiDesk.png'
 import bookiTab from './cover/Booki/bookiTab.png'
 import bookiMobile from './cover/Booki/bookiMobile.png'
-import ohmyfood from './cover/2ohmyfood-cover.png'
+import bookiColors from './cover/Booki/bookiColors.png'
+import bookiIcons from './cover/Booki/bookiIcons.png'
+
+import ohmyfood from './cover/Ohmyfood/2ohmyfood-cover.png'
+import ohmyfoodDesk from './cover/Ohmyfood/ohmyfoodDesk.png'
+import ohmyfoodTab from './cover/Ohmyfood/ohmyfoodTab.png'
+import ohmyfoodMobile from './cover/Ohmyfood/ohmyfoodMobile.png'
+
 import lapanthere from './cover/3lapanthere-cover.png'
 import kanap from './cover/5kanap-cover.png'
 import hottakes from './cover/4hottakes-cover.png'
@@ -22,6 +29,8 @@ export const projectsList = [
         imgDesk: bookiDesk,
         imgTab: bookiTab,
         imgMobile: bookiMobile,
+        imgColors: bookiColors,
+        imgIcons: bookiIcons,
         gitLink: 'https://github.com/CamilleLinan/Projet-2-Booki',
         webSite: 'https://camillelinan.github.io/Projet-2-Booki/',
     },
@@ -35,6 +44,9 @@ export const projectsList = [
         objectifs: 'Intégrer la maquette créée par le designer UI en mobilefirst en respectant les contraintes graphiques et d\'animations, sans utiliser de JavaScript. Mise en page libre pour les versions desktop et tablette.',
         languages: 'HTML5, CSS3, Sass',
         titleImg: 'Versions desktop, tablette et mobile :',
+        imgDesk: ohmyfoodDesk,
+        imgTab: ohmyfoodTab,
+        imgMobile: ohmyfoodMobile,
         gitLink: 'https://github.com/CamilleLinan/Projet-3-Ohmyfood',
         webSite: 'https://camillelinan.github.io/Projet-3-Ohmyfood/'
     },
