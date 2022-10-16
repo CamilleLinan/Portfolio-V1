@@ -1,6 +1,6 @@
 @import 'variables';
 
-@media(max-width: 800px) {
+@media(max-width: 768px) {
     .project_page {
         margin: 150px auto 30px auto !important;
         width: 90% !important;
@@ -22,10 +22,6 @@
             }
         }
 
-        &_ui_img {
-            width: 28% !important;
-        }
-
         &_footer {
             flex-direction: column;
             
@@ -40,7 +36,7 @@
     }
 }
 
-@media(min-width: 800px) and (max-width: 1200px) {
+@media(min-width: 768px) and (max-width: 1100px) {
     .project_page {
         
         &_pres {
@@ -52,10 +48,6 @@
             &_etap {
                 width: 30% !important;
             }
-        }
-
-        &_ui_img {
-            width: 16% !important;
         }
     }
 }
@@ -78,23 +70,31 @@
             border-top: 1px solid #0000002e;
             border-bottom: 1px solid #0000002e;
         }
+
+        &_logos {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            
+            &_logo {
+                width: 60px;
+                margin: auto 0.5rem;
+            }
+        }
     }
 
     &_cover {
-        margin-top: 70px;
+        margin-top: 30px;
         
+        &_title {
+            margin-top: 0;
+        }
+
         &_imgs {
             position: relative;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            &_title {
-                position: absolute;
-                &_1 {
-                    top: 0;
-                    left: 20%;
-                }
-            }
         }
         
         &_img {
@@ -124,7 +124,7 @@
 
     &_ui {
         &_img {
-            width: 18vh;
+            width: 22vh;
             &_colors {
                 margin-right: 2rem;
             }
