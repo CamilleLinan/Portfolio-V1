@@ -22,6 +22,10 @@
             }
         }
 
+        &_ui_img {
+            width: 28% !important;
+        }
+
         &_footer {
             flex-direction: column;
             
@@ -45,6 +49,13 @@
         
         &_cover_img {
             width: 45% !important;
+            &_etap {
+                width: 30% !important;
+            }
+        }
+
+        &_ui_img {
+            width: 16% !important;
         }
     }
 }
