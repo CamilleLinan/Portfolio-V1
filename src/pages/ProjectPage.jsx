@@ -62,7 +62,7 @@ const ProjectPage = () => {
                                     <a href={project.gitLink} target='_blank' rel='noreferrer' className='project_page_footer_link'>Voir le code sur GitHub</a>
                                 }
                                 {project.webSite && 
-                                    <a href={project.webSite} target='_blank' rel='noreferrer' className='project_page_footer_link'>Voir le site web</a>
+                                    <a href={project.webSite} target='_blank' rel='noreferrer' className='project_page_footer_link project_page_footer_link_1'>Voir le site web</a>
                                 }
                                 {project.gitLinkBack && project.gitLinkFront && 
                                     <>

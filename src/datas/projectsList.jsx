@@ -9,6 +9,8 @@ import ohmyfood from './cover/Ohmyfood/2ohmyfood-cover.png'
 import ohmyfoodDesk from './cover/Ohmyfood/ohmyfoodDesk.png'
 import ohmyfoodTab from './cover/Ohmyfood/ohmyfoodTab.png'
 import ohmyfoodMobile from './cover/Ohmyfood/ohmyfoodMobile.png'
+import ohmyfoodColors from './cover/Ohmyfood/ohmyfoodColors.png'
+import ohmyfoodIcons from './cover/Ohmyfood/ohmyfoodIcons.png'
 
 import lapanthere from './cover/3lapanthere-cover.png'
 import kanap from './cover/5kanap-cover.png'
@@ -47,6 +49,8 @@ export const projectsList = [
         imgDesk: ohmyfoodDesk,
         imgTab: ohmyfoodTab,
         imgMobile: ohmyfoodMobile,
+        imgColors: ohmyfoodColors,
+        imgIcons: ohmyfoodIcons,
         gitLink: 'https://github.com/CamilleLinan/Projet-3-Ohmyfood',
         webSite: 'https://camillelinan.github.io/Projet-3-Ohmyfood/'
     },

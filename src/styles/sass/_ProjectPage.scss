@@ -1,8 +1,51 @@
 @import 'variables';
 
+@media(max-width: 800px) {
+    .project_page {
+        margin: 150px auto 30px auto !important;
+        width: 90% !important;
+        
+        &_pres {
+            width: 100% !important;
+        }
+
+        &_cover {
+            margin-top: 30px !important;
+            &_img {
+                width: 95% !important;
+            }
+        }
+
+        &_footer {
+            flex-direction: column;
+            
+            &_link {
+                width: 90% !important;
+                margin: auto;
+                &_1 {
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 800px) and (max-width: 1200px) {
+    .project_page {
+        
+        &_pres {
+            width: 100% !important;
+        }
+        
+        &_cover_img {
+            width: 45% !important;
+        }
+    }
+}
+
 .project_page {
     margin: 120px auto 30px auto;
-    width: 90%;
+    width: 95%;
     padding: 1rem;
     background-color: $bg-color;
     border-radius: 0.5rem;
@@ -21,7 +64,7 @@
     }
 
     &_cover {
-        margin-top: 70px !important;
+        margin-top: 70px;
         
         &_imgs {
             display: flex;
@@ -30,8 +73,9 @@
         }
         
         &_img {
-            width: 31%;
+            width: 30%;
             object-fit: cover;
+            margin: 1rem;
             box-shadow: 0 0 5px #00000033;
             border-radius: 0.5rem;
         }
@@ -39,7 +83,7 @@
 
     &_ui {
         &_img {
-            width: 15%;
+            width: 18vh;
             &_colors {
                 margin-right: 2rem;
             }
@@ -53,7 +97,7 @@
         margin: 2rem auto 0 auto;
 
         &_link {
-            background: #518aa3;
+            background: #377BA9;
             color: white;
             padding: 0.5rem 1rem;
             border-radius: 0.5rem;
