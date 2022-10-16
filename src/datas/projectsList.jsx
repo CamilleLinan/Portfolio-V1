@@ -1,3 +1,4 @@
+// BOOKI
 import booki from './cover/1Booki/bookiCover.png'
 import bookiDesk from './cover/1Booki/bookiDesk.png'
 import bookiTab from './cover/1Booki/bookiTab.png'
@@ -5,6 +6,7 @@ import bookiMobile from './cover/1Booki/bookiMobile.png'
 import bookiColors from './cover/1Booki/bookiColors.png'
 import bookiIcons from './cover/1Booki/bookiIcons.png'
 
+// OHMYFOOD
 import ohmyfood from './cover/2Ohmyfood/ohmyfoodCover.png'
 import ohmyfoodDesk from './cover/2Ohmyfood/ohmyfoodDesk.png'
 import ohmyfoodTab from './cover/2Ohmyfood/ohmyfoodTab.png'
@@ -12,21 +14,33 @@ import ohmyfoodMobile from './cover/2Ohmyfood/ohmyfoodMobile.png'
 import ohmyfoodColors from './cover/2Ohmyfood/ohmyfoodColors.png'
 import ohmyfoodIcons from './cover/2Ohmyfood/ohmyfoodIcons.png'
 
+// LAPANTHERE
 import lapanthere from './cover/3LaPanthere/lapanthereCover.png'
 import lapanthereBefore from './cover/3LaPanthere/lapanthereBefore.png'
 import lapanthereAfter from './cover/3LaPanthere/lapanthereAfter.png'
 
+// KANAP
 import kanap from './cover/4Kanap/kanapCover.png'
 import kanapEtap1 from './cover/4Kanap/kanapEtap1.png'
 import kanapEtap2 from './cover/4Kanap/kanapEtap2.png'
 import kanapEtap3 from './cover/4Kanap/kanapEtap3.png'
 import kanapEtap4 from './cover/4Kanap/kanapEtap4.png'
 
+// HOTTAKES
 import hottakes from './cover/5Hottakes/hottakesCover.png'
 import hottakesEtap1 from './cover/5Hottakes/hottakesEtap1.png'
 import hottakesEtap2 from './cover/5Hottakes/hottakesEtap2.png'
 
-import groupomania from './cover/6groupomania-cover.png'
+// GROUPOMANIA
+import groupomania from './cover/6Groupomania/groupomaniaCover.png'
+import groupoEtap1 from './cover/6Groupomania/groupoEtap1.png'
+import groupoEtap2 from './cover/6Groupomania/groupoEtap2.png'
+import groupoEtap3 from './cover/6Groupomania/groupoEtap3.png'
+import groupoEtap4 from './cover/6Groupomania/groupoEtap4.png'
+import groupoEtap5 from './cover/6Groupomania/groupoEtap5.png'
+import groupoEtap6 from './cover/6Groupomania/groupoEtap6.png'
+import groupoColors from './cover/6Groupomania/groupoColors.png'
+import groupoIcons from './cover/6Groupomania/groupoIcons.png'
 
 export const projectsList = [
     {
@@ -115,7 +129,14 @@ export const projectsList = [
         context: 'Groupomania est une entreprise ayant un ralentissement de sa productivité attribué à une baisse de la motivation et de l\'implication des employés. Elle souhaite donc créer un réseau social d\'entreprise afin d\'améliorer la relation entre ces derniers.',
         objectifs: 'Créer une partie front-end avec un framework JavaScript, ici React. Et une API sécurisée permettant aux utilisateurs de se créer un compte, se connecter et se déconnecter. Ainsi que créer un post, modifier ou supprimer leur post, et liker tous les posts. J\'ai également ajouter une page ou les utilisateurs peuvent modifier leurs informations. ',
         languages: 'React.js, Node.js, Express.js et MongoDB pour la base de données.',
-        titleImg: 'Versions desktop et mobile :',
+        imgEtap1: groupoEtap1,
+        imgEtap2: groupoEtap2,
+        imgEtap3: groupoEtap3,
+        imgEtap4: groupoEtap4,
+        imgEtap5: groupoEtap5,
+        imgEtap6: groupoEtap6,
+        imgColors: groupoColors,
+        imgIcons: groupoIcons,
         gitLinkBack: 'https://github.com/CamilleLinan/Projet-7-Groupomania-Back',
         gitLinkFront: 'https://github.com/CamilleLinan/Projet-7-Groupomania-Front'  
     }
