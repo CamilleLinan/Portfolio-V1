@@ -67,9 +67,13 @@
         margin-top: 70px;
         
         &_imgs {
+            position: relative;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            &_title {
+                position: absolute;
+            }
         }
         
         &_img {

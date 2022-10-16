@@ -33,28 +33,31 @@ const ProjectPage = () => {
                         </section>
                         
                         <section className='project_page_cover'>
+                            {project.imgDesk && project.imgTab && project.imgMobile && project.imgColors && project.imgIcons && <>
                             <h3 className='project_page_cover_title bold'>Version desktop, tablette et mobile :</h3>
                             <article className='project_page_cover_imgs'>
-                                {project.imgDesk &&
-                                    <img src={project.imgDesk} alt={project.alt} className='project_page_cover_img' />
-                                }
-                                {project.imgTab &&
-                                    <img src={project.imgTab} alt={project.alt} className='project_page_cover_img' />
-                                }
-                                {project.imgMobile &&
-                                    <img src={project.imgMobile} alt={project.alt} className='project_page_cover_img' />
-                                }
+                                <img src={project.imgDesk} alt={project.alt} className='project_page_cover_img' />
+                                <img src={project.imgTab} alt={project.alt} className='project_page_cover_img' />
+                                <img src={project.imgMobile} alt={project.alt} className='project_page_cover_img' />
                             </article>
                             
                             <h3 className='project_page_cover_title bold'>Identité graphique :</h3>
                             <article className='project_page_ui'>
-                                {project.imgColors &&
-                                    <img src={project.imgColors} alt={project.alt} className='project_page_ui_img project_page_ui_img_colors' />
-                                }
-                                {project.imgIcons &&
-                                    <img src={project.imgIcons} alt={project.alt} className='project_page_ui_img project_page_ui_img_icons' />
-                                }
+                                <img src={project.imgColors} alt={project.alt} className='project_page_ui_img project_page_ui_img_colors' />
+                                <img src={project.imgIcons} alt={project.alt} className='project_page_ui_img project_page_ui_img_icons' />
                             </article>
+                            </>}
+                            
+                            {project.imgBefore && project.imgAfter && <>
+                            <h3 className='project_page_cover_title bold'>Version tablette, avant et après :</h3>
+                            <article className='project_page_cover_imgs'>
+                                    <span className='project_page_cover_imgs_title project_page_cover_imgs_title_1'>Avant</span>
+                                    <img src={project.imgBefore} alt={project.alt} className='project_page_cover_img' />
+
+                                    <span className='project_page_cover_imgs_title project_page_cover_imgs_title_2'>Après</span>
+                                    <img src={project.imgAfter} alt={project.alt} className='project_page_cover_img' />
+                            </article>
+                            </>}
                         </section>
                         
                             <footer className='project_page_footer'>
@@ -64,12 +67,10 @@ const ProjectPage = () => {
                                 {project.webSite && 
                                     <a href={project.webSite} target='_blank' rel='noreferrer' className='project_page_footer_link project_page_footer_link_1'>Voir le site web</a>
                                 }
-                                {project.gitLinkBack && project.gitLinkFront && 
-                                    <>
-                                        <a href={project.gitLinkBack} target='_blank' rel='noreferrer' className='project_page_footer_link'>Voir le code sur GitHub - Back</a>
-                                        <a href={project.gitLinkFront} target='_blank' rel='noreferrer' className='project_page_footer_link'>Voir le code sur GitHub - Front</a>
-                                    </>
-                                }
+                                {project.gitLinkBack && project.gitLinkFront && <>
+                                    <a href={project.gitLinkBack} target='_blank' rel='noreferrer' className='project_page_footer_link'>Voir le code sur GitHub - Back</a>
+                                    <a href={project.gitLinkFront} target='_blank' rel='noreferrer' className='project_page_footer_link project_page_footer_link_1'>Voir le code sur GitHub - Front</a>
+                                </>}
                             </footer>
                         
                     </div>

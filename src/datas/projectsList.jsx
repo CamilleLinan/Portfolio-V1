@@ -1,18 +1,22 @@
-import booki from './cover/Booki/1booki-cover.png'
-import bookiDesk from './cover/Booki/bookiDesk.png'
-import bookiTab from './cover/Booki/bookiTab.png'
-import bookiMobile from './cover/Booki/bookiMobile.png'
-import bookiColors from './cover/Booki/bookiColors.png'
-import bookiIcons from './cover/Booki/bookiIcons.png'
+import booki from './cover/1Booki/bookiCover.png'
+import bookiDesk from './cover/1Booki/bookiDesk.png'
+import bookiTab from './cover/1Booki/bookiTab.png'
+import bookiMobile from './cover/1Booki/bookiMobile.png'
+import bookiColors from './cover/1Booki/bookiColors.png'
+import bookiIcons from './cover/1Booki/bookiIcons.png'
 
-import ohmyfood from './cover/Ohmyfood/2ohmyfood-cover.png'
-import ohmyfoodDesk from './cover/Ohmyfood/ohmyfoodDesk.png'
-import ohmyfoodTab from './cover/Ohmyfood/ohmyfoodTab.png'
-import ohmyfoodMobile from './cover/Ohmyfood/ohmyfoodMobile.png'
-import ohmyfoodColors from './cover/Ohmyfood/ohmyfoodColors.png'
-import ohmyfoodIcons from './cover/Ohmyfood/ohmyfoodIcons.png'
+import ohmyfood from './cover/2Ohmyfood/ohmyfoodCover.png'
+import ohmyfoodDesk from './cover/2Ohmyfood/ohmyfoodDesk.png'
+import ohmyfoodTab from './cover/2Ohmyfood/ohmyfoodTab.png'
+import ohmyfoodMobile from './cover/2Ohmyfood/ohmyfoodMobile.png'
+import ohmyfoodColors from './cover/2Ohmyfood/ohmyfoodColors.png'
+import ohmyfoodIcons from './cover/2Ohmyfood/ohmyfoodIcons.png'
 
-import lapanthere from './cover/3lapanthere-cover.png'
+import lapanthere from './cover/3LaPanthere/lapanthereCover.png'
+import lapanthereBefore from './cover/3LaPanthere/lapanthereBefore.png'
+import lapanthereAfter from './cover/3LaPanthere/lapanthereAfter.png'
+
+
 import kanap from './cover/5kanap-cover.png'
 import hottakes from './cover/4hottakes-cover.png'
 import groupomania from './cover/6groupomania-cover.png'
@@ -64,7 +68,10 @@ export const projectsList = [
         objectifs: 'Analyser l\'état actuel de SEO du site fourni et améliorer les points les plus importants concernant notamment la vitesse, la taille et l\'accessibilité du site. Puis créer un rapport d\'optimisations pour comparer les résultats avant/après fournis par différents analyseur de qualité et performance web.',
         languages: 'HTML5 et CSS3',
         titleImg: 'Extraits du rapport d\'optimisations :',
-        gitLink: 'https://github.com/CamilleLinan/Projet-4-La-Panthere'
+        imgBefore: lapanthereBefore,
+        imgAfter: lapanthereAfter,
+        gitLink: 'https://github.com/CamilleLinan/Projet-4-La-Panthere',
+        webSite: 'https://camillelinan.github.io/Projet-4-La-Panthere/'
     },
     {
         id: '04',
