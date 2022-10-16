@@ -10,7 +10,6 @@
 
 # production
 /build
-/src/datas/cover
 
 # misc
 .DS_Store
