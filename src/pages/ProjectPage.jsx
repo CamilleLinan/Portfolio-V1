@@ -51,11 +51,20 @@ const ProjectPage = () => {
                             {project.imgBefore && project.imgAfter && <>
                             <h3 className='project_page_cover_title bold'>Version tablette, avant et après :</h3>
                             <article className='project_page_cover_imgs'>
-                                    <span className='project_page_cover_imgs_title project_page_cover_imgs_title_1'>Avant</span>
-                                    <img src={project.imgBefore} alt={project.alt} className='project_page_cover_img' />
+                                    <img src={project.imgBefore} alt={project.alt} className='project_page_cover_img_fulltab project_page_cover_img_fulltab_1' />
+                                    <img src={project.imgAfter} alt={project.alt} className='project_page_cover_img_fulltab' />
+                            </article>
+                            </>}
 
-                                    <span className='project_page_cover_imgs_title project_page_cover_imgs_title_2'>Après</span>
-                                    <img src={project.imgAfter} alt={project.alt} className='project_page_cover_img' />
+                            {project.imgEtap1 && project.imgEtap2 && <>
+                            <h3 className='project_page_cover_title bold'>Parcours utilisateur :</h3>
+                            <article className='project_page_cover_imgs'>
+                                <img src={project.imgEtap1} alt={project.alt} className='project_page_cover_img_etap' />
+                                <img src={project.imgEtap2} alt={project.alt} className='project_page_cover_img_etap' />
+                                {project.imgEtap3 && project.imgEtap4 && <>
+                                <img src={project.imgEtap3} alt={project.alt} className='project_page_cover_img_etap' />
+                                <img src={project.imgEtap4} alt={project.alt} className='project_page_cover_img_etap' />
+                                </>}
                             </article>
                             </>}
                         </section>

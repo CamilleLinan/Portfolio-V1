@@ -13,6 +13,12 @@
             margin-top: 30px !important;
             &_img {
                 width: 95% !important;
+                &_fulltab {
+                    width: 95% !important;
+                }
+                &_etap {
+                    width: 65% !important;
+                }
             }
         }
 
@@ -73,6 +79,10 @@
             justify-content: space-around;
             &_title {
                 position: absolute;
+                &_1 {
+                    top: 0;
+                    left: 20%;
+                }
             }
         }
         
@@ -82,6 +92,22 @@
             margin: 1rem;
             box-shadow: 0 0 5px #00000033;
             border-radius: 0.5rem;
+            
+            &_fulltab {
+                width: 45%;
+                box-shadow: 0 0 5px #00000033;
+                border-radius: 0.5rem;
+                object-fit: cover;
+                margin: 1rem;
+            }
+
+            &_etap {
+                width: 33%;
+                padding: 20px 60px;
+                box-shadow: 0 0 5px #00000033;
+                border-radius: 0.5rem;
+                margin-bottom: 2rem;
+            }
         }
     }
 
