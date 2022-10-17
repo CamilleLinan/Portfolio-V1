@@ -56,14 +56,14 @@ const ProjectPage = () => {
                         
                         <section className='project_page_cover'>
                             {project.imgDesk && project.imgTab && project.imgMobile && project.imgColors && project.imgIcons && <>
-                                <h2 className='project_page_cover_title bold'>Version desktop, tablette et mobile :</h2>
+                                <h2 className='project_page_cover_title'>Version desktop, tablette et mobile :</h2>
                                 <article className='project_page_cover_imgs'>
                                     <img src={project.imgDesk} alt={project.alt} className='project_page_cover_img' />
                                     <img src={project.imgTab} alt={project.alt} className='project_page_cover_img' />
                                     <img src={project.imgMobile} alt={project.alt} className='project_page_cover_img' />
                                 </article>
                                 
-                                <h2 className='project_page_cover_title bold'>Identité graphique :</h2>
+                                <h2 className='project_page_cover_title'>Identité graphique :</h2>
                                 <article className='project_page_ui'>
                                     <img src={project.imgColors} alt={project.alt} className='project_page_ui_img project_page_ui_img_colors' />
                                     <img src={project.imgIcons} alt={project.alt} className='project_page_ui_img project_page_ui_img_icons' />
@@ -71,7 +71,7 @@ const ProjectPage = () => {
                             </>}
                             
                             {project.imgBefore && project.imgAfter && <>
-                                <h2 className='project_page_cover_title bold'>Version tablette, avant et après :</h2>
+                                <h2 className='project_page_cover_title'>Version tablette, avant et après :</h2>
                                 <article className='project_page_cover_imgs'>
                                         <img src={project.imgBefore} alt={project.alt} className='project_page_cover_img_fulltab project_page_cover_img_fulltab_1' />
                                         <img src={project.imgAfter} alt={project.alt} className='project_page_cover_img_fulltab' />
@@ -79,7 +79,7 @@ const ProjectPage = () => {
                             </>}
 
                             {project.imgEtap1 && project.imgEtap2 && <>
-                                <h2 className='project_page_cover_title bold'>Parcours utilisateur :</h2>
+                                <h2 className='project_page_cover_title'>Parcours utilisateur :</h2>
                                 <article className='project_page_cover_imgs'>
                                     <img src={project.imgEtap1} alt={project.alt} className='project_page_cover_img_etap' />
                                     <img src={project.imgEtap2} alt={project.alt} className='project_page_cover_img_etap' />
@@ -94,7 +94,7 @@ const ProjectPage = () => {
                                 </article>
 
                                 {project.imgColors && project.imgIcons && <>
-                                    <h2 className='project_page_cover_title bold'>Identité graphique :</h2>
+                                    <h2 className='project_page_cover_title'>Identité graphique :</h2>
                                     <article className='project_page_ui'>
                                         <img src={project.imgColors} alt={project.alt} className='project_page_ui_img project_page_ui_img_colors' />
                                         <img src={project.imgIcons} alt={project.alt} className='project_page_ui_img project_page_ui_img_icons' />
