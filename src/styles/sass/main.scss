@@ -4,6 +4,7 @@
 @import 'Intro';
 @import 'DisplayCards';
 @import 'Footer';
+@import 'ProjectPage';
 
 html {
     position: relative;
@@ -33,4 +34,8 @@ ul {
 li {
     display: inline-block;
     list-style: none;
+}
+
+.bold {
+    font-family: 'Raleway-Medium';
 }

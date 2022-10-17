@@ -10,8 +10,7 @@
         }
 
         &_links {
-            margin: 0 !important;
-            margin-bottom: 1rem !important;
+            margin: 0 0 1rem 1rem !important;
             font-size: 22px;
         }
     }
@@ -58,17 +57,8 @@
         font-size: 19px;
 
         &_link {
-            
-            &_home {
-                margin-right: 10px;
-            }
-
             &_CV {
-                margin: 0 15px !important;
-            }
-
-            &_contact {
-                margin-left: 10px;
+                margin: 0 2rem !important;
             }
         }
     }

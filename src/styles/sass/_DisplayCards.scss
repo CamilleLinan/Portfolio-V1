@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'fonts';
 
-@media(max-width: 800px) {
+@media(max-width: 768px) {
     .projects_project {
         width: 95% !important;
         &_figcaption {
@@ -16,7 +16,7 @@
     }
 }
 
-@media(min-width: 800px) and (max-width: 1090px) {
+@media(min-width: 768px) and (max-width: 1090px) {
     .projects_project {
         width: 49% !important;
     }
