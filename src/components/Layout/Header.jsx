@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import CV from '../../documents/CV_Camille_Linan_2022.pdf';
+import CV from '../../documents/CV_Linan_Camille_2022.pdf';
 
 const Header = () => {
     return (
