@@ -1,4 +1,4 @@
-import profil from '../../styles/img/profil.jpeg';
+import profil from '../../styles/img/profil.webp';
 
 const Intro = () => {
     return (
