@@ -39,6 +39,9 @@
         
         &_figure {
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: $bg-color;
             box-shadow: 0 0 5px #0000002e;
             border-radius: 0.5rem;
@@ -48,7 +51,7 @@
             cursor: pointer;
             
             &_img {
-                width: 100%;
+                width: 98%;
                 border-radius: 0.5rem;
                 object-fit: cover;
             }
