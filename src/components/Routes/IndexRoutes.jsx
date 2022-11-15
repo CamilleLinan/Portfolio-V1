@@ -7,7 +7,7 @@ const IndexRoutes = () => {
         <BrowserRouter>
             <Routes>
                 <Route path='/' element={<Home />}/>
-                <Route path='/project/:id' element={<ProjectPage />}/>
+                <Route path='/project/:name' element={<ProjectPage />}/>
                 <Route path='*' element={<Home />}/>
             </Routes>
         </BrowserRouter>

@@ -4,14 +4,14 @@ import { projectsList } from '../datas/projectsList';
 import Footer from '../components/Layout/Footer';
 
 const ProjectPage = () => {
-    const { id } = useParams()
+    const { name } = useParams()
     
     return (
         <>
             <Header />
             {projectsList.map((project, i) => (
                 <div key={project.id}> 
-                    {id === project.id &&
+                    {name === project.name &&
                     <div className='project_page'>
                         <header>
                             <h1>Projet : {project.name}</h1>

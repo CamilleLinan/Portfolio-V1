@@ -1,7 +1,7 @@
 const ProjectItem = ({ id, cover, alt, name, resume }) => {
     return (
         <li key={id} className="projects_project">
-            <a href={'/project/' + id}>
+            <a href={'/project/' + name}>
                 <figure className="projects_project_figure">
                     <img src={cover} alt={alt} className="projects_project_figure_img" />
                     <figcaption className="projects_project_figcaption">
