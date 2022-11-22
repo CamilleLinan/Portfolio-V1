@@ -82,6 +82,7 @@ export const projectsList = [
         altEtap5: 'cover kasa openclassrooms etape 5',
         imgEtap6: kasaEtap6,
         altEtap6: 'cover kasa openclassrooms etape 6',
+        gitLink: 'https://github.com/CamilleLinan/Projet-8-Kasa',
     },
     {
         id: '06',
