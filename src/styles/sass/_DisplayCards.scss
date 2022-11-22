@@ -29,9 +29,8 @@
     
     &_list {
         display: flex;
-        flex-direction: row-reverse;
-	    flex-wrap: wrap-reverse;
-	    justify-content: center;
+        flex-flow: row wrap;
+
     }
     
     &_project {
