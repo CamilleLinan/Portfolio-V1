@@ -1,3 +1,12 @@
+// LOGO
+import logoHtml from '../styles/img/logo-html.png'
+import logoCss from '../styles/img/logo-css.png'
+import logoSass from '../styles/img/logo-sass.png'
+import logoJS from '../styles/img/logo-js.png'
+import logoNode from '../styles/img/logo-node.png'
+import logoMongo from '../styles/img/logo-mongo.png'
+import logoReact from '../styles/img/logo-react.png'
+
 // BOOKI
 import booki from './cover/1Booki/bookiCover.webp'
 import bookiDesk from './cover/1Booki/bookiDesk.webp'
@@ -42,14 +51,8 @@ import groupoEtap6 from './cover/6Groupomania/groupoEtap6.webp'
 import groupoColors from './cover/6Groupomania/groupoColors.png'
 import groupoIcons from './cover/6Groupomania/groupoIcons.png'
 
-// LOGO
-import logoHtml from '../styles/img/logo-html.png'
-import logoCss from '../styles/img/logo-css.png'
-import logoSass from '../styles/img/logo-sass.png'
-import logoJS from '../styles/img/logo-js.png'
-import logoNode from '../styles/img/logo-node.png'
-import logoMongo from '../styles/img/logo-mongo.png'
-import logoReact from '../styles/img/logo-react.png'
+// 7 KASA
+import kasa from './cover/7Kasa/kasaCover.webp'
 
 export const projectsList = [
     {
@@ -181,5 +184,15 @@ export const projectsList = [
         altIcons: 'groupomania openclassrooms icons',
         gitLinkBack: 'https://github.com/CamilleLinan/Projet-7-Groupomania-Back',
         gitLinkFront: 'https://github.com/CamilleLinan/Projet-7-Groupomania-Front'  
+    },
+    {
+        id: '07',
+        name: 'Kasa',
+        cover: kasa,
+        alt: 'cover kasa openclassrooms',
+        resume: 'Création d\'une application web de location immobilière avec React',
+        context: 'Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans. L\'entreprise souhaite faire une refonte totale de son site web.',
+        objectifs: 'Développer l\'ensemble de l\'application et ses composants avec React, en suivant les maquettes Figma fournies.',
+        react: logoReact
     }
 ]
