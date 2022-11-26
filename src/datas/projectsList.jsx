@@ -53,12 +53,11 @@ import groupoIcons from './cover/6Groupomania/groupoIcons.png'
 
 // 7 KASA
 import kasa from './cover/7Kasa/kasaCover.webp'
-import kasaEtap1 from './cover/7Kasa/kasaEtap1.webp'
-import kasaEtap2 from './cover/7Kasa/kasaEtap2.webp'
-import kasaEtap3 from './cover/7Kasa/kasaEtap3.webp'
-import kasaEtap4 from './cover/7Kasa/kasaEtap4.webp'
-import kasaEtap5 from './cover/7Kasa/kasaEtap5.webp'
-import kasaEtap6 from './cover/7Kasa/kasaEtap6.webp'
+import kasaEtap1 from './cover/7Kasa/kasaEtap1.png'
+import kasaEtap2 from './cover/7Kasa/kasaEtap2.png'
+import kasaEtap3 from './cover/7Kasa/kasaEtap3.png'
+import kasaEtap4 from './cover/7Kasa/kasaEtap4.png'
+
 
 export const projectsList = [
     {
@@ -68,7 +67,11 @@ export const projectsList = [
         alt: 'cover kasa openclassrooms',
         resume: 'Création d\'une application web de location immobilière avec React',
         context: 'Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans. L\'entreprise souhaite faire une refonte totale de son site web.',
-        objectifs: 'Développer l\'ensemble de l\'application et ses composants avec React, en suivant les maquettes Figma fournies.',
+        objectifs: 'Développer l\'ensemble de l\'application et ses composants avec React, en suivant les maquettes Figma fournies. Des composants réutilisables doivent être créés pour les onglets ouvrants et le carrousel de photo.',
+        html: logoHtml,
+        css: logoCss,
+        sass: logoSass,
+        js: logoJS,
         react: logoReact,
         imgEtap1: kasaEtap1,
         altEtap1: 'cover kasa openclassrooms etape 1',
@@ -78,10 +81,6 @@ export const projectsList = [
         altEtap3: 'cover kasa openclassrooms etape 3',
         imgEtap4: kasaEtap4,
         altEtap4: 'cover kasa openclassrooms etape 4',
-        imgEtap5: kasaEtap5,
-        altEtap5: 'cover kasa openclassrooms etape 5',
-        imgEtap6: kasaEtap6,
-        altEtap6: 'cover kasa openclassrooms etape 6',
         gitLink: 'https://github.com/CamilleLinan/Projet-8-Kasa',
     },
     {
@@ -92,9 +91,13 @@ export const projectsList = [
         resume: 'Création d\'un réseau social d\'entreprise avec React.js',
         context: 'Groupomania est une entreprise ayant un ralentissement de sa productivité attribué à une baisse de la motivation et de l\'implication des employés. Elle souhaite donc créer un réseau social d\'entreprise afin d\'améliorer la relation entre ces derniers.',
         objectifs: 'Créer une partie front-end avec un framework JavaScript, ici React. Et une API sécurisée permettant aux utilisateurs de se créer un compte, se connecter et se déconnecter. Ainsi que créer un post, modifier ou supprimer leur post, et liker tous les posts. J\'ai également ajouté une page où les utilisateurs peuvent modifier leurs informations. ',
-        react: logoReact,
+        html: logoHtml,
+        css: logoCss,
+        sass: logoSass,
+        js: logoJS,
         node: logoNode,
         mongo: logoMongo,
+        react: logoReact,
         imgEtap1: groupoEtap1,
         altEtap1: 'cover groupomania openclassrooms etape 1',
         imgEtap2: groupoEtap2,
