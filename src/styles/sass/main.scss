@@ -8,7 +8,7 @@
 
 html {
     position: relative;
-    background: url('img/portfolio-bg.webp') fixed no-repeat;
+    background: url('img/bg/cool-background (2).png') fixed no-repeat;
     background-size: cover;
     font-family: 'Raleway';
     font-size: 17px;
@@ -22,9 +22,6 @@ a {
     font-family: 'Raleway-Medium';
     text-decoration: none;
     color: $txt-color;
-    &:hover {
-        color: $link-color;
-    }
 }
 
 ul {

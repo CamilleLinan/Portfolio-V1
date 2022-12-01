@@ -4,6 +4,7 @@
     background: $bg-color;
     backdrop-filter: blur(10px);
     margin: 70px -7px -16px -7px;
+    box-shadow: 0 0 5px #00000033;
 
     &_box {
         display: flex;

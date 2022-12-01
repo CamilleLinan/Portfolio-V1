@@ -1,11 +1,11 @@
 // LOGO
-import logoHtml from '../styles/img/logo-html.png'
-import logoCss from '../styles/img/logo-css.png'
-import logoSass from '../styles/img/logo-sass.png'
-import logoJS from '../styles/img/logo-js.png'
-import logoNode from '../styles/img/logo-node.png'
-import logoMongo from '../styles/img/logo-mongo.png'
-import logoReact from '../styles/img/logo-react.png'
+import logoHtml from '../styles/img/logos/logo-html.png'
+import logoCss from '../styles/img/logos/logo-css.png'
+import logoSass from '../styles/img/logos/logo-sass.png'
+import logoJS from '../styles/img/logos/logo-js.png'
+import logoNode from '../styles/img/logos/logo-node.png'
+import logoMongo from '../styles/img/logos/logo-mongo.png'
+import logoReact from '../styles/img/logos/logo-react.png'
 
 // BOOKI
 import booki from './cover/1Booki/bookiCover.webp'
