@@ -53,10 +53,12 @@ import groupoIcons from './cover/6Groupomania/groupoIcons.png'
 
 // 7 KASA
 import kasa from './cover/7Kasa/kasaCover.webp'
-import kasaEtap1 from './cover/7Kasa/kasaEtap1.png'
-import kasaEtap2 from './cover/7Kasa/kasaEtap2.png'
-import kasaEtap3 from './cover/7Kasa/kasaEtap3.png'
-import kasaEtap4 from './cover/7Kasa/kasaEtap4.png'
+import kasaEtap1 from './cover/7Kasa/kasaEtap1.webp'
+import kasaEtap2 from './cover/7Kasa/kasaEtap2.webp'
+import kasaEtap3 from './cover/7Kasa/kasaEtap3.webp'
+import kasaEtap4 from './cover/7Kasa/kasaEtap4.webp'
+import kasaEtap5 from './cover/7Kasa/kasaEtap5.webp'
+import kasaEtap6 from './cover/7Kasa/kasaEtap6.webp'
 
 
 export const projectsList = [
@@ -81,6 +83,10 @@ export const projectsList = [
         altEtap3: 'cover kasa openclassrooms etape 3',
         imgEtap4: kasaEtap4,
         altEtap4: 'cover kasa openclassrooms etape 4',
+        imgEtap5: kasaEtap5,
+        altEtap5: 'cover kasa openclassrooms etape 5',
+        imgEtap6: kasaEtap6,
+        altEtap6: 'cover kasa openclassrooms etape 6',
         gitLink: 'https://github.com/CamilleLinan/Projet-8-Kasa',
         webSite: 'https://projet-8-kasa-brnf30w8b-camillelinan.vercel.app/'
     },
