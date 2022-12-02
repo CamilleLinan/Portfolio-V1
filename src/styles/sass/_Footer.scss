@@ -1,5 +1,11 @@
 @import 'variables';
 
+@media(max-width: 768px) {
+    .footer {
+        margin-top: 40px !important;
+    }
+}
+
 .footer {
     background: $bg-color;
     backdrop-filter: blur(10px);

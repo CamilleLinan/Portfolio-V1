@@ -82,6 +82,7 @@ export const projectsList = [
         imgEtap4: kasaEtap4,
         altEtap4: 'cover kasa openclassrooms etape 4',
         gitLink: 'https://github.com/CamilleLinan/Projet-8-Kasa',
+        webSite: 'https://projet-8-kasa-brnf30w8b-camillelinan.vercel.app/'
     },
     {
         id: '06',

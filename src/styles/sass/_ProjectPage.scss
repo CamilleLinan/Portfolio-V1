@@ -1,8 +1,9 @@
 @import 'variables';
+@import 'fonts';
 
 @media(max-width: 768px) {
     .project_page {
-        margin: 150px auto 30px auto !important;
+        margin: 150px auto 0px auto !important;
         width: 90% !important;
         
         &_pres {
@@ -10,14 +11,35 @@
         }
 
         &_cover {
+            width: 100%;
             margin-top: 30px !important;
+            &_title {
+                margin-bottom: 23px !important;
+            }
+
             &_img {
-                width: 95% !important;
+                width: 100% !important;
+                border-bottom: 1px solid #0000002e;
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                margin: 0 !important;
+                &_1 {
+                    border-top: 1px solid #0000002e;
+                }
+                
                 &_fulltab {
                     width: 95% !important;
                 }
+                
                 &_etap {
-                    width: 65% !important;
+                    width: 68% !important;
+                    border-bottom: 1px solid #0000002e;
+                    box-shadow: none !important;
+                    border-radius: 0 !important;
+                    margin: 0 !important;
+                    &_1 {
+                        border-top: 1px solid #0000002e;
+                    }
                 }
             }
         }
@@ -27,7 +49,7 @@
             
             &_link {
                 width: 90% !important;
-                margin: auto;
+                margin-bottom: 0.3rem !important;
                 &_1 {
                     margin-top: 0.5rem;
                 }
@@ -48,35 +70,43 @@
                 width: 30% !important;
             }
         }
+        &_footer_link {
+            width: 50%;
+        }
     }
 }
 
 .project_page {
     margin: 120px auto 30px auto;
     width: 95%;
-    padding: 1rem;
-    background-color: $bg-color;
-    backdrop-filter: blur(7px);
-    border-radius: 0.5rem;
-    box-shadow: 0 0 5px #00000033;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     & h1 {
-        margin-top: 10px;
+        margin-top: 7px;
+        font-family: 'Raleway-Bold';
+    }
+    & h2 {
+        margin-top: 17px;
+        margin-bottom: 17px;
     }
 
     &_pres {
-        width: 55%;
+        background-color: $bg-color;
+        backdrop-filter: blur(7px);
+        border-radius: 0.5rem;
+        box-shadow: 0 0 5px #00000033;
+        width: 50%;
+        padding: 1rem;
         
         &_article {
             border-top: 1px solid #0000002e;
-            border-bottom: 1px solid #0000002e;
         }
 
         &_logos {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            margin-bottom: 1rem;
             
             &_logo {
                 width: 60px;
@@ -86,10 +116,18 @@
     }
 
     &_cover {
+        background-color: $bg-color;
+        backdrop-filter: blur(7px);
+        border-radius: 0.5rem;
+        box-shadow: 0 0 5px #00000033;
+        width: 100%;
+        padding: 1rem;
         margin-top: 30px;
         
         &_title {
-            margin-top: 0;
+            margin-top: 7px;
+            margin-bottom: 17px;
+            font-size: 25px;
         }
 
         &_imgs {
@@ -120,12 +158,14 @@
                 box-shadow: 0 0 5px #00000033;
                 border-radius: 0.5rem;
                 margin-bottom: 2rem;
+                object-fit: cover;
             }
         }
     }
 
     &_ui {
         &_img {
+            margin-bottom: 0.5rem;
             width: 18vh;
             &_colors {
                 margin-right: 2rem;
@@ -137,20 +177,21 @@
         display: flex;
         justify-content: space-around;
         width: 100%;
-        margin: 2rem auto 0 auto;
+        margin: 1rem auto 0 auto;
 
         &_link {
             background: transparent;
             padding: 0.5rem 1rem;
+            margin-bottom: 0.9rem;
             border-radius: 0.5rem;
             width: 43%;
             text-align: center;
             border: 2px solid rgba(0, 0, 0, 0.6);
-            transition: all 600ms ease-in-out;
+            transition: all 400ms ease-in-out;
             &:hover {
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.243);
                 color: white !important;
                 background-color: rgb(55, 55, 55);
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.243);
             }
         }
     }

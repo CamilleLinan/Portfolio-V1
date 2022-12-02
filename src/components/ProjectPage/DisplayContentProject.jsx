@@ -9,16 +9,16 @@ const DisplayContentProject = () => {
             <div key={project.id}> 
                 {name === project.name &&
                 <div className='project_page'>
-                    <header>
-                        <h1>Projet : {project.name}</h1>
-                    </header>
-                    
+
                     <section className='project_page_pres'>
+                        <header>
+                            <h1>Projet : {project.name}</h1>
+                        </header>
                         <article className='project_page_pres_article'>
                             <h2 className='project_page_pres_title'>Contexte :</h2>
                             <p className='project_page_pres_text'>{project.context}</p>
                         </article>
-                        <article>
+                        <article className='project_page_pres_article'>
                             <h2 className='project_page_pres_title'>Objectifs :</h2>
                             <p className='project_page_pres_text'>{project.objectifs}</p>
                         </article>
@@ -52,14 +52,14 @@ const DisplayContentProject = () => {
                     
                     <section className='project_page_cover'>
                         {project.imgDesk && project.imgTab && project.imgMobile && project.imgColors && project.imgIcons && <>
-                            <h2 className='project_page_cover_title'>Version desktop, tablette et mobile :</h2>
+                            <h3 className='project_page_cover_title'>Version desktop, tablette et mobile :</h3>
                             <article className='project_page_cover_imgs'>
-                                <img src={project.imgDesk} alt={project.altDesk} className='project_page_cover_img' />
+                                <img src={project.imgDesk} alt={project.altDesk} className='project_page_cover_img project_page_cover_img_1' />
                                 <img src={project.imgTab} alt={project.altTab} className='project_page_cover_img' />
                                 <img src={project.imgMobile} alt={project.altMobile} className='project_page_cover_img' />
                             </article>
                             
-                            <h2 className='project_page_cover_title'>Identité graphique :</h2>
+                            <h3 className='project_page_cover_title'>Identité graphique :</h3>
                             <article className='project_page_ui'>
                                 <img src={project.imgColors} alt={project.altColors} className='project_page_ui_img project_page_ui_img_colors' />
                                 <img src={project.imgIcons} alt={project.altIcons} className='project_page_ui_img project_page_ui_img_icons' />
@@ -67,7 +67,7 @@ const DisplayContentProject = () => {
                         </>}
                         
                         {project.imgBefore && project.imgAfter && <>
-                            <h2 className='project_page_cover_title'>Version tablette, avant et après :</h2>
+                            <h3 className='project_page_cover_title'>Version tablette, avant et après :</h3>
                             <article className='project_page_cover_imgs'>
                                     <img src={project.imgBefore} alt={project.altBefore} className='project_page_cover_img_fulltab project_page_cover_img_fulltab_1' />
                                     <img src={project.imgAfter} alt={project.altAfter} className='project_page_cover_img_fulltab' />
@@ -75,9 +75,9 @@ const DisplayContentProject = () => {
                         </>}
 
                         {project.imgEtap1 && project.imgEtap2 && <>
-                            <h2 className='project_page_cover_title'>Parcours utilisateur :</h2>
+                            <h3 className='project_page_cover_title'>Parcours utilisateur :</h3>
                             <article className='project_page_cover_imgs'>
-                                <img src={project.imgEtap1} alt={project.altEtap1} className='project_page_cover_img_etap' />
+                                <img src={project.imgEtap1} alt={project.altEtap1} className='project_page_cover_img_etap project_page_cover_img_etap_1' />
                                 <img src={project.imgEtap2} alt={project.altEtap2} className='project_page_cover_img_etap' />
                                 {project.imgEtap3 && project.imgEtap4 && <>
                                     <img src={project.imgEtap3} alt={project.altEtap3} className='project_page_cover_img_etap' />
@@ -90,15 +90,14 @@ const DisplayContentProject = () => {
                             </article>
 
                             {project.imgColors && project.imgIcons && <>
-                                <h2 className='project_page_cover_title'>Identité graphique :</h2>
+                                <h3 className='project_page_cover_title'>Identité graphique :</h3>
                                 <article className='project_page_ui'>
                                     <img src={project.imgColors} alt={project.altColors} className='project_page_ui_img project_page_ui_img_colors' />
                                     <img src={project.imgIcons} alt={project.altIcons} className='project_page_ui_img project_page_ui_img_icons' />
                                 </article>
                             </>}
                         </>}
-                    </section>
-                    
+
                         <footer className='project_page_footer'>
                             {project.gitLink &&
                                 <a href={project.gitLink} target='_blank' rel='noreferrer' className='project_page_footer_link'>Voir le code sur GitHub</a>
@@ -111,7 +110,8 @@ const DisplayContentProject = () => {
                                 <a href={project.gitLinkFront} target='_blank' rel='noreferrer' className='project_page_footer_link project_page_footer_link_1'>Voir le code sur GitHub - Front</a>
                             </>}
                         </footer>
-                    
+                    </section>
+
                 </div>
             } </div>
         ))} </>
