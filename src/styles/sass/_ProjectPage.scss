@@ -17,6 +17,10 @@
                 margin-bottom: 23px !important;
             }
 
+            &_imgs {
+                margin-bottom: 1rem;
+            }
+
             &_img {
                 width: 100% !important;
                 border-bottom: 1px solid #0000002e;
@@ -54,7 +58,7 @@
         }
         
         &_cover_img {
-            width: 45% !important;
+            width: 45.6% !important;
         }
         &_footer_link {
             width: 50%;
@@ -131,11 +135,15 @@
             border-radius: 0.5rem;
             
             &_fulltab {
-                width: 45%;
+                width: 40%;
                 box-shadow: 0 0 5px #00000033;
                 border-radius: 0.5rem;
                 object-fit: cover;
                 margin: 1rem;
+            }
+
+            &_etap {
+                width: 46%;
             }
         }
     }

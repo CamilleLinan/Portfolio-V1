@@ -77,15 +77,15 @@ const DisplayContentProject = () => {
                         {project.imgEtap1 && project.imgEtap2 && <>
                             <h3 className='project_page_cover_title'>Parcours utilisateur :</h3>
                             <article className='project_page_cover_imgs'>
-                                <img src={project.imgEtap1} alt={project.altEtap1} className='project_page_cover_img project_page_cover_img_1' />
-                                <img src={project.imgEtap2} alt={project.altEtap2} className='project_page_cover_img' />
+                                <img src={project.imgEtap1} alt={project.altEtap1} className='project_page_cover_img project_page_cover_img_1 project_page_cover_img_etap' />
+                                <img src={project.imgEtap2} alt={project.altEtap2} className='project_page_cover_img project_page_cover_img_etap' />
                                 {project.imgEtap3 && project.imgEtap4 && <>
-                                    <img src={project.imgEtap3} alt={project.altEtap3} className='project_page_cover_img' />
-                                    <img src={project.imgEtap4} alt={project.altEtap4} className='project_page_cover_img' />
+                                    <img src={project.imgEtap3} alt={project.altEtap3} className='project_page_cover_img project_page_cover_img_etap' />
+                                    <img src={project.imgEtap4} alt={project.altEtap4} className='project_page_cover_img project_page_cover_img_etap' />
                                 </>}
                                 {project.imgEtap5 && project.imgEtap6 && <>
-                                    <img src={project.imgEtap5} alt={project.altEtap5} className='project_page_cover_img' />
-                                    <img src={project.imgEtap6} alt={project.altEtap6} className='project_page_cover_img' />
+                                    <img src={project.imgEtap5} alt={project.altEtap5} className='project_page_cover_img project_page_cover_img_etap' />
+                                    <img src={project.imgEtap6} alt={project.altEtap6} className='project_page_cover_img project_page_cover_img_etap' />
                                 </>}
                             </article>
 
