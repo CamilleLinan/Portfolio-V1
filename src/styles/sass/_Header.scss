@@ -55,15 +55,17 @@
     &_links {
         margin-right: 20px;
         font-size: 19px;
-
-        &_link {
-            &_CV {
-                margin: 0 2rem !important;
+        & a {
+            &:hover {
+                font-family: 'Raleway-Bold';
             }
+        }
+        &_link_CV {
+            margin: 0 2rem !important;
         }
     }
 }
 
 .active_link {
-    color: $link-color;
+    font-family: 'Raleway-Bold';
 }

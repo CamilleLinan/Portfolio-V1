@@ -8,12 +8,11 @@
 
 html {
     position: relative;
-    background: url('img/portfolio-bg.webp') fixed no-repeat;
+    background: url('img/portfolio-bg1.jpeg') fixed no-repeat;
     background-size: cover;
     font-family: 'Raleway';
     font-size: 17px;
     color: $txt-color;
-    min-width: 365px;
     max-width: 2400px;
     margin: auto;
 }
@@ -22,9 +21,6 @@ a {
     font-family: 'Raleway-Medium';
     text-decoration: none;
     color: $txt-color;
-    &:hover {
-        color: $link-color;
-    }
 }
 
 ul {
