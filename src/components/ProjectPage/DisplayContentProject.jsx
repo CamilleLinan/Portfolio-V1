@@ -27,7 +27,7 @@ const DisplayContentProject = () => {
                             
                             <div className='project_page_pres_logos'>
                                 {project.languages.map((logo, i) => (
-                                    <img src={logo} alt='logo HTML' className='project_page_pres_logos_logo' />
+                                    <img key={i} src={logo} alt='logo HTML' className='project_page_pres_logos_logo' />
                                 ))}
                             </div>
                         </article>
@@ -36,18 +36,23 @@ const DisplayContentProject = () => {
                     <section className='project_page_cover'>
                         
                         {project.picturesPres && <>
-                            <h3 className='project_page_cover_title'>Version desktop, tablette et mobile :</h3>
+                            <h3 className='project_page_cover_title project_page_cover_title_1'>Version desktop, tablette et mobile :</h3>
                             <article className='project_page_cover_imgs'>
                                 {project.picturesPres.map((picturePres, i) => (
-                                    <img src={picturePres} alt={`cover ${project.name} openclassrooms desktop, tablette et mobile`} className='project_page_cover_img project_page_cover_img_1' />
+                                    <img key={i} src={picturePres} alt={`cover ${project.name} openclassrooms desktop, tablette et mobile`} className='project_page_cover_img' />
                                 ))}
                             </article>
                             
                             <h3 className='project_page_cover_title'>Identité graphique :</h3>
                             <article className='project_page_ui'>
-                                {project.graphicId.map((gId, i) => (
-                                    <img src={gId} alt={`couleurs et icons de ${project.name} openclassrooms`} className='project_page_ui_img project_page_ui_img_colors' />
-                                ))}
+                                <div>
+                                    <h4 className='project_page_ui_title'>Couleurs :</h4>
+                                    <img src={project.colors} alt={`couleurs ${project.name} openclassrooms`} className='project_page_ui_img project_page_ui_img_colors' />
+                                </div>
+                                <div>
+                                    <h4 className='project_page_ui_title'>Icônes :</h4>
+                                    <img src={project.icons} alt={`icônes de ${project.name} openclassrooms`} className='project_page_ui_img project_page_ui_img_icons' />
+                                </div>
                             </article>
                         </>}
                         
@@ -60,19 +65,26 @@ const DisplayContentProject = () => {
                         </>}
 
                         {project.picturesEtap && <>
-                            <h3 className='project_page_cover_title'>Parcours utilisateur :</h3>
+                            <h3 className='project_page_cover_title project_page_cover_title_1'>Parcours utilisateur :</h3>
                             <article className='project_page_cover_imgs'>
                                 {project.picturesEtap.map((pictureEtap, i) => (
-                                    <img src={pictureEtap} alt={`parcours utilisateur ${project.name} openclassrooms`} className='project_page_cover_img project_page_cover_img_1 project_page_cover_img_etap' />
+                                    <img key={i} src={pictureEtap} alt={`parcours utilisateur ${project.name} openclassrooms`} className='project_page_cover_img project_page_cover_img_etap' />
                                 ))}
                             </article>
 
-                            {project.graphicId && <>
+                            {project.colors && <>
                                 <h3 className='project_page_cover_title'>Identité graphique :</h3>
                                 <article className='project_page_ui'>
-                                    {project.graphicId.map((gId, i) => (
-                                        <img src={gId} alt={`couleurs et icons de ${project.name} openclassrooms`} className='project_page_ui_img project_page_ui_img_colors' />
-                                    ))}
+                                    <div>
+                                        <h4 className='project_page_ui_title'>Couleurs :</h4>
+                                        <img src={project.colors} alt={`couleurs et icons de ${project.name} openclassrooms`} className='project_page_ui_img project_page_ui_img_colors' />
+                                    </div>
+                                    {project.icons &&
+                                        <div>
+                                            <h4 className='project_page_ui_title'>Icônes :</h4>
+                                            <img src={project.icons} alt={`couleurs et icons de ${project.name} openclassrooms`} className='project_page_ui_img project_page_ui_img_icons' />
+                                        </div>
+                                    }
                                 </article>
                             </>}
                         </>}
