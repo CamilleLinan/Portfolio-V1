@@ -1,3 +1,4 @@
+import React from "react"
 import { useParams } from 'react-router-dom';
 import { projectsList } from '../../datas/projectsList';
 
@@ -91,14 +92,14 @@ const DisplayContentProject = () => {
 
                         <footer className='project_page_footer'>
                             {project.gitLink &&
-                                <a href={project.gitLink} target='_blank' rel='noreferrer' className='project_page_footer_link'>Voir le code sur GitHub</a>
+                                <a href={project.gitLink} target='_blank' rel='noopener noreferrer' className='project_page_footer_link'>Voir le code sur GitHub</a>
                             }
                             {project.webSite && 
-                                <a href={project.webSite} target='_blank' rel='noreferrer' className='project_page_footer_link project_page_footer_link_1'>Voir le site web</a>
+                                <a href={project.webSite} target='_blank' rel='noopener noreferrer' className='project_page_footer_link project_page_footer_link_1'>Voir le site web</a>
                             }
                             {project.gitLinkBack && project.gitLinkFront && <>
-                                <a href={project.gitLinkBack} target='_blank' rel='noreferrer' className='project_page_footer_link'>Voir le code sur GitHub - Back</a>
-                                <a href={project.gitLinkFront} target='_blank' rel='noreferrer' className='project_page_footer_link project_page_footer_link_1'>Voir le code sur GitHub - Front</a>
+                                <a href={project.gitLinkBack} target='_blank' rel='noopener noreferrer' className='project_page_footer_link'>Voir le code sur GitHub - Back</a>
+                                <a href={project.gitLinkFront} target='_blank' rel='noopener noreferrer' className='project_page_footer_link project_page_footer_link_1'>Voir le code sur GitHub - Front</a>
                             </>}
                         </footer>
                     </section>

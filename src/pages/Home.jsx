@@ -1,3 +1,4 @@
+import React from "react"
 import Header from "../components/Layout/Header";
 import Intro from "../components/Home/Intro";
 import DisplayProjects from "../components/Home/DisplayProjects";

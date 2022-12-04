@@ -1,3 +1,5 @@
+import React from "react"
+
 const ProjectItem = ({ id, cover, name, resume }) => {
     return (
         <li key={id} className="projects_project">
