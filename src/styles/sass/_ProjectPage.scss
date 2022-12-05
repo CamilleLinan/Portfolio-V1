@@ -32,9 +32,7 @@
                 box-shadow: none !important;
                 border-radius: 0 !important;
                 margin: 0 !important;
-                &_1 {
-                    border-top: 1px solid #0000002e;
-                }
+                background-color: transparent !important;
                 
                 &_fulltab {
                     width: 95% !important;
@@ -94,10 +92,6 @@
     }
 
     &_pres {
-        background-color: $bg-color;
-        backdrop-filter: blur(7px);
-        border-radius: 0.5rem;
-        box-shadow: 0 0 5px #00000033;
         width: 50%;
         padding: 1rem;
         
@@ -118,10 +112,6 @@
     }
 
     &_cover {
-        background-color: $bg-color;
-        backdrop-filter: blur(7px);
-        border-radius: 0.5rem;
-        box-shadow: 0 0 5px #00000033;
         width: 100%;
         padding: 1rem;
         margin-top: 30px;
@@ -142,16 +132,12 @@
         &_img {
             width: 30%;
             object-fit: cover;
-            margin: 1rem;
-            box-shadow: 0 0 5px #00000033;
-            border-radius: 0.5rem;
+            background-color: rgba(187, 187, 187, 0.18);
+            @include border-elmt;
             
             &_fulltab {
                 width: 40%;
-                box-shadow: 0 0 5px #00000033;
-                border-radius: 0.5rem;
-                object-fit: cover;
-                margin: 1rem;
+                @include border-elmt;
             }
 
             &_etap {
@@ -199,8 +185,8 @@
             transition: all 400ms ease-in-out;
             &:hover {
                 color: white !important;
-                background-color: rgb(55, 55, 55);
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.243);
+                background-color: $secondary-clr;
+                box-shadow: $box-shadow-elmt;
             }
         }
     }

@@ -14,12 +14,8 @@
     display: flex;
     width: 70%;
     margin: 150px auto 80px auto;
-    background: $bg-color;
     padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 5px #0000002e;
     max-width: 800px;
-    backdrop-filter: blur(5px);
     z-index: 1;
     
     &_img {

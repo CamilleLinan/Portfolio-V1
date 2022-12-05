@@ -1,0 +1,24 @@
+@import 'variables';
+
+@media(max-width: 768px) {
+    .projects_list {
+        justify-content: center;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1090px) {
+    .projects_list {
+        justify-content: space-around;
+    }
+}
+
+.projects {
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    
+    &_list {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}

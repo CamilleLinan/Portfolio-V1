@@ -3,7 +3,7 @@ import profil from '../../styles/img/profil.webp';
 
 const Intro = () => {
     return (
-        <section className="intro">
+        <section className="intro background_section">
             <img src={profil} alt="" className='intro_img' />
             <article className='intro_titles'>
                 <h3 className="intro_titles_title">Bienvenue sur mon portfolio !</h3>
