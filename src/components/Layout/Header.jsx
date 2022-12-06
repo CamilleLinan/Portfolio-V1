@@ -1,3 +1,4 @@
+import React from "react"
 import { NavLink } from 'react-router-dom';
 import CV from '../../documents/CV_Linan_Camille_2022.pdf';
 
@@ -16,7 +17,7 @@ const Header = () => {
                     >
                         Accueil
                     </NavLink>
-                    <a href={CV} target='_blank' rel='noreferrer' className="header_links_link_CV">
+                    <a href={CV} target='_blank' rel='noopener noreferrer' className="header_links_link_CV">
                         CV
                     </a>
                     <a href='mailto:camille.linan@hotmail.com' className="header_links_link_contact">

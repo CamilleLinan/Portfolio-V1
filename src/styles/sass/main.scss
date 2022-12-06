@@ -2,32 +2,36 @@
 @import 'fonts';
 @import 'Header';
 @import 'Intro';
-@import 'DisplayCards';
-@import 'Footer';
+@import 'DisplayProjects';
+@import 'ProjectItem';
 @import 'ProjectPage';
+@import 'Gallery';
+@import 'NoMatch';
+@import 'Footer';
 
 @media(max-width: 768px) {
     html {
-        background: url('img/portfolio-bg1.jpeg') !important;
+        width: 100%;
+        background: url('img/portfolio-bg.jpg') !important;
         background-size: auto !important;
     }
 }
 
 html {
     position: relative;
-    background: url('img/portfolio-bg1.jpeg') fixed no-repeat;
+    background: url('img/portfolio-bg.jpg') fixed no-repeat;
     background-size: cover;
     font-family: 'Raleway';
     font-size: 17px;
-    color: $txt-color;
-    max-width: 2400px;
+    color: $primary-clr;
     margin: auto;
+    min-height: 100%;
 }
 
 a {
     font-family: 'Raleway-Medium';
     text-decoration: none;
-    color: $txt-color;
+    color: $primary-clr;
 }
 
 ul {
@@ -39,6 +43,9 @@ li {
     list-style: none;
 }
 
-.bold {
-    font-family: 'Raleway-Medium';
+.background_section {
+    background-color: $tertiary-clr;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #0000002e;
+    border-radius: $border-radius-elmt;
 }

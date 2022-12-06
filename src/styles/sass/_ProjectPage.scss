@@ -12,7 +12,7 @@
 
         &_cover {
             width: 100%;
-            margin-top: 30px !important;
+            margin-top: 2.5rem !important;
             &_title {
                 margin-bottom: 23px !important;
                 &_1 {
@@ -32,9 +32,7 @@
                 box-shadow: none !important;
                 border-radius: 0 !important;
                 margin: 0 !important;
-                &_1 {
-                    border-top: 1px solid #0000002e;
-                }
+                background-color: transparent !important;
                 
                 &_fulltab {
                     width: 95% !important;
@@ -56,7 +54,7 @@
                 width: 90% !important;
                 margin-bottom: 0.3rem !important;
                 &_1 {
-                    margin-top: 0.5rem;
+                    margin-top: 1rem;
                 }
             }
         }
@@ -70,7 +68,8 @@
         }
         
         &_cover_img {
-            width: 95% !important;
+            width: 88% !important;
+            margin-bottom: 2rem !important;
         }
         &_footer_link {
             width: 50%;
@@ -94,10 +93,6 @@
     }
 
     &_pres {
-        background-color: $bg-color;
-        backdrop-filter: blur(7px);
-        border-radius: 0.5rem;
-        box-shadow: 0 0 5px #00000033;
         width: 50%;
         padding: 1rem;
         
@@ -118,13 +113,9 @@
     }
 
     &_cover {
-        background-color: $bg-color;
-        backdrop-filter: blur(7px);
-        border-radius: 0.5rem;
-        box-shadow: 0 0 5px #00000033;
         width: 100%;
         padding: 1rem;
-        margin-top: 30px;
+        margin-top: 3rem;
         
         &_title {
             margin-top: 7px;
@@ -142,20 +133,18 @@
         &_img {
             width: 30%;
             object-fit: cover;
-            margin: 1rem;
-            box-shadow: 0 0 5px #00000033;
-            border-radius: 0.5rem;
+            background-color: rgba(187, 187, 187, 0.18);
+            @include border-elmt;
+            cursor: zoom-in;
             
             &_fulltab {
                 width: 40%;
-                box-shadow: 0 0 5px #00000033;
-                border-radius: 0.5rem;
-                object-fit: cover;
-                margin: 1rem;
+                @include border-elmt;
             }
 
             &_etap {
                 width: 46%;
+                margin-bottom: 2rem;
             }
         }
     }
@@ -199,8 +188,8 @@
             transition: all 400ms ease-in-out;
             &:hover {
                 color: white !important;
-                background-color: rgb(55, 55, 55);
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.243);
+                background-color: $secondary-clr;
+                box-shadow: $box-shadow-elmt;
             }
         }
     }

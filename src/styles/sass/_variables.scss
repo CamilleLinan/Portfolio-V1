@@ -1,4 +1,18 @@
-$txt-color: rgb(28, 28, 28);
-$link-color: #976886;
+$primary-clr: rgb(28, 28, 28);
+$secondary-clr: rgba(27, 27, 27, 0.8);
+$tertiary-clr: rgba(255, 255, 255, 0.2);
 
-$bg-color: rgba(255, 255, 255, 0.2);
+$box-shadow-elmt: 0 0 5px #00000033;
+$border-radius-elmt: 0.5rem;
+
+@mixin border-elmt {
+    margin: 1rem;
+    box-shadow: $box-shadow-elmt;
+    border-radius: $border-radius-elmt;
+}
+
+@mixin bg-header-footer {
+    background-color: $tertiary-clr;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px #0000002e;
+}

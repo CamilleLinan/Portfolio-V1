@@ -1,3 +1,4 @@
+import React from "react"
 import IndexRoutes from "./components/Routes/IndexRoutes";
 
 const App = () => {
