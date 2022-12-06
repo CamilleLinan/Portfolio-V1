@@ -1,16 +1,34 @@
-import React from "react"
+import React, { useState } from "react"
 import { useParams } from 'react-router-dom';
 import { projectsList } from '../../datas/projectsList';
+import Gallery from "./Gallery";
 import NoMatch from "./NoMatch";
 
 const ProjectPageContent = () => {
+    const [ diapoPres, setDiapoPres ] = useState(false);
+    const [ diapoEtap, setDiapoEtap ] = useState(false);
+
+    const openDiapoPres = () => {
+        setDiapoPres(true)
+    }
+
+    const openDiapoEtap = () => {
+        setDiapoEtap(true)
+    }
+
+    const closeDiapo = () => {
+        setDiapoPres(false)
+        setDiapoEtap(false)
+    }
+
     const { name } = useParams()
     const project = projectsList.find(project => project.name === name)
     if (project === undefined) { return <NoMatch /> }
 
     return( 
         <div className='project_page'>
-
+            {diapoPres && <Gallery img={project.picturesPres} onClick={closeDiapo} />}
+            {diapoEtap && <Gallery img={project.picturesEtap} onClick={closeDiapo} />}
             <section className='project_page_pres background_section'>
                 <header>
                     <h1>Projet : {project.name}</h1>
@@ -40,7 +58,7 @@ const ProjectPageContent = () => {
                     
                     <article className='project_page_cover_imgs'>
                         {project.picturesPres.map((picturePres, i) => (
-                            <img key={i} src={picturePres} alt={`cover ${project.name} openclassrooms desktop, tablette et mobile`} className='project_page_cover_img' />
+                            <img key={i} src={picturePres} alt={`cover ${project.name} openclassrooms desktop, tablette et mobile`} className='project_page_cover_img' onClick={openDiapoPres} />
                         ))}
                     </article>
                     
@@ -72,7 +90,7 @@ const ProjectPageContent = () => {
                     
                     <article className='project_page_cover_imgs'>
                         {project.picturesEtap.map((pictureEtap, i) => (
-                            <img key={i} src={pictureEtap} alt={`parcours utilisateur ${project.name} openclassrooms`} className='project_page_cover_img project_page_cover_img_etap' />
+                            <img key={i} src={pictureEtap} alt={`parcours utilisateur ${project.name} openclassrooms`} className='project_page_cover_img project_page_cover_img_etap' onClick={openDiapoEtap} />
                         ))}
                     </article>
 

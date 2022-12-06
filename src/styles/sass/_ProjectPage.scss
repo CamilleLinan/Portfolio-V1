@@ -12,7 +12,7 @@
 
         &_cover {
             width: 100%;
-            margin-top: 30px !important;
+            margin-top: 2.5rem !important;
             &_title {
                 margin-bottom: 23px !important;
                 &_1 {
@@ -68,7 +68,8 @@
         }
         
         &_cover_img {
-            width: 95% !important;
+            width: 88% !important;
+            margin-bottom: 2rem !important;
         }
         &_footer_link {
             width: 50%;
@@ -114,7 +115,7 @@
     &_cover {
         width: 100%;
         padding: 1rem;
-        margin-top: 30px;
+        margin-top: 3rem;
         
         &_title {
             margin-top: 7px;
@@ -134,6 +135,7 @@
             object-fit: cover;
             background-color: rgba(187, 187, 187, 0.18);
             @include border-elmt;
+            cursor: zoom-in;
             
             &_fulltab {
                 width: 40%;
@@ -142,6 +144,7 @@
 
             &_etap {
                 width: 46%;
+                margin-bottom: 2rem;
             }
         }
     }
